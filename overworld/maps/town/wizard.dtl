@@ -1,0 +1,9 @@
+wizard: "LOGIKA DEDUKTIF!"
+wizard: "Eh wait... maksudku, mari kita selidiki jadwal praktikum di jam ini dengan kepala dingin."
+if {HasWizardToken} == 0:
+	wizard: "Kamu butuh alibi pengurus organisasi? Kami tidak punya waktu untuk menyembunyikan kunci penting."
+	wizard: "Ini, bawa catatan inventaris lab ini sebelum kamu pergi menginterogasi yang lain."
+	[signal arg="coin_received"]
+	set {HasWizardToken} = 1
+	set {TokenCount} += 1
+[end_timeline]

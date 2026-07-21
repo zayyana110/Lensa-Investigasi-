@@ -1,0 +1,11 @@
+warrior: "Kamu pasti penasaran kan, kenapa aku bisa tahu semua sudut halaman kampus ini?"
+warrior: "Apa karena aku sering nongkrong di sini? Atau karena aku selalu memperhatikan orang yang lewat?"
+warrior: "Tentu saja karena aku punya ingatan visual yang kuat sebagai anak teknik!"
+if {HasWarriorToken} == 0:
+	warrior: "Oh, jadi kalian lagi cari [i]kunci[/i] ruang lab Dasar Informatika itu?"
+	warrior: "Lucunya, tadi aku sempat lihat seseorang buru-buru ke arah lorong belakang sambil membawa gantungan kunci organisasi."
+	warrior: "Coba kalian selidiki ke area sana. Siapa tahu kuncinya tertukar karena kelalaian mereka saat rapat!"
+	[signal arg="coin_received"]
+	set {HasWarriorToken} = 1
+	set {TokenCount} += 1
+[end_timeline]

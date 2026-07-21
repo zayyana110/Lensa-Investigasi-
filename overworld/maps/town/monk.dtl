@@ -1,0 +1,10 @@
+monk: "Aduh, gawat banget! Kami baru saja selesai rapat pleno di ruang sebelah..."
+monk: "Menuduh orang? Enggak kok! Mana berani saya menyembunyikan kunci lab itu?"
+monk: "Kami selalu menjaga barang-barang fasilitas kampus bersama-sama!"
+if {HasMonkToken} == 0:
+	monk: "Bukti fisik? Maaf, saya panik jadi tidak memperhatikan kantong almamater tadi."
+	monk: "Ini, ambil struk kantin yang saya temukan jatuh di dekat korong belakang. Siapa tahu berguna!"
+	[signal arg="coin_received"]
+	set {HasMonkToken} = 1
+	set {TokenCount} += 1
+[end_timeline]

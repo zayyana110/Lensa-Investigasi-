@@ -1,0 +1,9 @@
+if {Hint} == 0:
+	runner (Default): "Apakah Pak Sudewo pernah bilang kalau analisis forensik digital itu butuh ketelitian ekstra?"
+	runner (Default): "*Benar!* Beliau selalu mengingatkan kalau bukti sekecil apa pun tidak akan kelihatan kalau kita tidak memeriksa TKP dua kali!"
+	set {Hint} = 1
+else:
+	runner: "Tunggu, apa petunjuk dari anak organisasi tadi?"
+	runner: ""Periksa area parkir, kantin, lalu meja riset lab!""
+	set {Hint} = 0
+[end_timeline]

@@ -1,0 +1,5 @@
+"Sebuah barang bukti sedang berada di atas mesin pemindai."
+- Remove wand
+	[signal arg="empty"]
+- Do nothing
+[end_timeline]

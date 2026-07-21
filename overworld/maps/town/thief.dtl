@@ -1,0 +1,9 @@
+thief: "Eh? Kunci ruang lab yang hilang itu? Bukan aku yang ambil ya!"
+thief: "Tapi... heh[pause=0.2!] heh[pause=0.2!] tadi aku sempat lihat ada gantungan kunci organisasi jatuh di dekat lorong belakang."
+if {HasThiefToken} == 0:
+	thief: "Mau cari [b]bukti[/b] apa lagi? Kan sudah aku kasih tahu lokasinya tadi."
+	thief: "Coba ganti periksa ke arah kantong almamater atau tanya anak-anak BEM yang baru rapat di sana!"
+	[signal arg="coin_received"]
+	set {HasThiefToken} = 1
+	set {TokenCount} += 1
+[end_timeline]

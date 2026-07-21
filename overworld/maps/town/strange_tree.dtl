@@ -1,0 +1,7 @@
+if {StrangeTreeExamined} > 0:
+	"Tunggu, bagaimana kalau aku memeriksa ke bagian *belakang* pilar halaman ini?"
+	[signal arg="ClearPath"]
+else:
+	"Sayang sekali, sudut halaman kampus ini terlalu gelap dan tertutup semak..."
+	set {StrangeTreeExamined} = 1
+[end_timeline]
